@@ -1,0 +1,28 @@
+[0;34m[INFO][0m Checking system requirements...
+[0;32m[SUCCESS][0m Detected macOS
+[0;32m[SUCCESS][0m Found cmake
+[0;32m[SUCCESS][0m Found make
+[0;32m[SUCCESS][0m Found g++
+[0;32m[SUCCESS][0m Found clang++
+[0;32m[SUCCESS][0m Found Homebrew package manager
+[0;34m[INFO][0m Creating necessary directories...
+[0;32m[SUCCESS][0m Directories created
+[0;34m[INFO][0m Building project...
+[0;34m[INFO][0m Configuring with CMake...
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Volumes/Butterfly/CLOUD/build
+[0;34m[INFO][0m Building...
+[  1%] Building CXX object CMakeFiles/KernelSmokeTest.dir/tests/core/kernel/KernelSmokeTest.cpp.o
+[  2%] Building CXX object CMakeFiles/CloudIaaS.dir/src/core/balancer/LoadBalancer.cpp.o
+[  3%] Building CXX object CMakeFiles/CloudIaaS.dir/src/core/cache/dynamic/DynamicCache.cpp.o
+[  5%] Building CXX object CMakeFiles/CloudIaaS.dir/src/core/cache/dynamic/PlatformOptimizer.cpp.o
+[  6%] Building CXX object CMakeFiles/SecurityManagerSmokeTest.dir/src/core/balancer/LoadBalancer.cpp.o
+[  7%] Building CXX object CMakeFiles/KernelSmokeTest.dir/src/core/balancer/LoadBalancer.cpp.o
+[  8%] Building CXX object CMakeFiles/LoadBalancerSmokeTest.dir/tests/core/balancer/LoadBalancerSmokeTest.cpp.o
+[ 10%] Building CXX object CMakeFiles/DynamicCacheSmokeTest.dir/tests/core/cache/DynamicCacheSmokeTest.cpp.o
+[ 11%] Building CXX object CMakeFiles/KernelSmokeTest.dir/src/core/security/CryptoKernel.cpp.o
+[ 12%] Building CXX object CMakeFiles/LoadBalancerSmokeTest.dir/src/core/balancer/LoadBalancer.cpp.o
+[ 14%] Building CXX object CMakeFiles/SecurityManagerSmokeTest.dir/src/core/security/CryptoKernel.cpp.o
+[ 15%] Building CXX object CMakeFiles/LoadBalancerSmokeTest.dir/src/core/security/CryptoKernel.cpp.o
+[ 16%] Building CXX object CMakeFiles/LoadBalancerSmokeTest.dir/src/core/recovery/RecoveryManager.cpp.o
