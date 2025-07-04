@@ -1,0 +1,105 @@
+{
+  "service": {
+    "name": "Cloud IaaS Service",
+    "version": "1.0.0",
+    "description": "Production-ready cloud infrastructure service"
+  },
+  "logging": {
+    "level": "debug",
+    "console_level": "info",
+    "file_level": "debug",
+    "log_file": "logs/cloud_service.log",
+    "max_file_size": "10MB",
+    "max_files": 5,
+    "pattern": "[%Y-%m-%d %H:%M:%S.%e] [%l] [%t] %v"
+  },
+  "thread_pool": {
+    "min_threads": 4,
+    "max_threads": "auto",
+    "queue_size": 1000,
+    "stack_size": "1MB",
+    "apple_arm": {
+      "use_performance_cores": true,
+      "use_efficiency_cores": true,
+      "performance_core_count": 4,
+      "efficiency_core_count": 4
+    }
+  },
+  "security": {
+    "policy": "production",
+    "audit_enabled": true,
+    "encryption_enabled": true
+  },
+  "recovery": {
+    "max_recovery_points": 10,
+    "checkpoint_interval": "30s",
+    "auto_recovery": true,
+    "state_validation": true,
+    "compression": true,
+    "storage_path": "recovery_points",
+    "retention_period": "24h",
+    "max_point_size": "100MB"
+  },
+  "preload": {
+    "max_queue_size": 1000,
+    "max_concurrent_tasks": 10,
+    "prediction_threshold": 0.7,
+    "adaptive_prediction": true,
+    "metrics_collection": true
+  },
+  "load_balancer": {
+    "strategy": "hybrid_adaptive",
+    "resource_weights": {
+      "cpu": 0.3,
+      "memory": 0.25,
+      "network": 0.25,
+      "energy": 0.2
+    },
+    "adaptive_thresholds": {
+      "resource": 0.8,
+      "workload": 0.7
+    }
+  },
+  "kernels": {
+    "core": {
+      "count": 1,
+      "id_prefix": "core"
+    },
+    "micro": {
+      "count": 4,
+      "id_prefix": "micro"
+    },
+    "orchestration": {
+      "count": 1,
+      "id_prefix": "orch"
+    }
+  },
+  "cache": {
+    "dynamic": {
+      "initial_size": 256,
+      "max_size": 1024,
+      "ttl": "1h",
+      "eviction_policy": "lru"
+    },
+    "preload": {
+      "enabled": true,
+      "warmup_threshold": 0.5
+    }
+  },
+  "performance": {
+    "metrics_update_interval": "5s",
+    "recovery_checkpoint_interval": "30s",
+    "service_loop_interval": "100ms"
+  },
+  "platform": {
+    "apple_arm": {
+      "neon_acceleration": true,
+      "amx_acceleration": true,
+      "neural_engine": false
+    },
+    "linux_x64": {
+      "avx_acceleration": true,
+      "hyperthreading": true
+    }
+  }
+} 
